@@ -80,3 +80,124 @@ html {
 
     color: #FFFFFF;
 }
+
+.head {
+    height: 765px;
+    background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png);
+}
+
+.head__content {
+    /* display: flex;
+    flex-direction: column;
+    margin: 2.6rem 0rem 0rem 12rem;
+    justify-content: space-between; */
+}
+
+.content__plan{
+    display: flex;
+    flex-direction: column;
+    width: 892px;
+    height: 422px;
+    margin: 2.6rem 0rem 0rem 12rem;
+    justify-content: space-between;
+}
+
+.plan__head {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 9.6rem;
+
+    color: #FFFFFF;
+}
+
+.plan__info {
+    padding: 0rem;
+    margin: 0rem;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #FFFFFF;
+}
+
+.plan__start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 892px;
+    height: 95px; */
+    
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+.plan__text {
+    margin-left: 4.1rem;
+    padding: 0rem;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: #F2785C;
+}
+
+.plan__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.35rem 3.25rem;
+    margin: 1.8rem;
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Magra';
+    src: url(../assets/font/Magra-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../assets/font/RedHatText-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/font/Aleo-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../assets/font/Aleo-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../assets/font/Aleo-Italic.ttf);
+}

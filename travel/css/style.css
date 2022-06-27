@@ -1,0 +1,82 @@
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0px auto;
+}
+
+.header__conteiner {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: 12rem;
+}
+
+.logo__img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo__name {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+
+    color: #FFFFFF;
+}
+
+.header__navigation {
+    margin: 2.9rem 0px 4rem 0px;
+}
+
+.navigation__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 4.2rem;
+    padding: 0rem;
+    margin: 0rem;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    list-style-type: none;
+
+    color: #FFFFFF;
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.3rem;
+    height: 4.1rem;
+    margin: 1.9rem 12rem 3rem 0px;
+
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.button__login {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: #FFFFFF;
+}

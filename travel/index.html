@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/Vector.svg">
     <title>Travel</title>
 </head>
 <body>
@@ -22,18 +23,25 @@
 							<div class="header__navigation">
 								<nav>
 									<ul class="navigation__menu">
-										<li>How It Works</li>
-										<li>Plan Your Trip</li>
-										<li>Destinations</li>
-										<li>Travel Stories</li>
+										<li>
+                      <a class="navigation__menu" href="">How It Works</a>
+                    </li>
+										<li>
+                      <a class="navigation__menu" href="#steps">Plan Your Trip</a>
+                    </li>
+										<li>
+                      <a class="navigation__menu" href="#destinations">Destinations</a>
+                    </li>
+										<li>
+                      <a class="navigation__menu" href="#stories">Travel Stories</a>
+                    </li>
 									</ul>
 								</nav>
 							</div>
 							<div class="header__button">
 								<div class="button__login">Login</div>
 							</div>
-						</div>
-			
+						</div>		
 					</div>
 				</header>
 				<div class="preview__content">
@@ -47,7 +55,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="steps">
+			<section id="steps" class="steps">
         <div class="steps__conteiner">
           <h2 class="steps__name">3 STEPS TO THE PERFECT TRIP</h2>
           <div class="steps__content">
@@ -60,13 +68,19 @@
           </div>
         </div>
 			</section>
-      <section class="destinations">
+      <section id="destinations" class="destinations">
         <div class="destinations__conteiner">
           <h2 class="destinations__name">POPULAR DESTINATIONS</h2>
           <div class="destinations__cards">
-            <div class="destinations__slide"> <img  class="destinations__slide" src="./assets/img/Rectangle23.png" alt=""></div>
-            <div class="destinations__slide"> <img class="destinations__slide"src="./assets/img/Rectangle24.png" alt=""></div>
-            <div class="destinations__slide"> <img class="destinations__slide"src="./assets/img/Rectangle25.png" alt=""></div>
+            <div class="destinations__slide">
+              <img class="destinations__slide" src="./assets/img/Rectangle23.jpg" alt="sea">
+            </div>
+            <div class="destinations__slide">
+              <img class="destinations__slide" src="./assets/img/Rectangle24.jpg" alt="Japan">
+            </div>
+            <div class="destinations__slide">
+              <img class="destinations__slide" src="./assets/img/Rectangle25.jpg" alt="USA">
+            </div>
           </div>
           <div class="destinations__nav">
             <button class="destinations__nav-button"></button>
@@ -75,39 +89,39 @@
           </div>
           <div class="destinations__button">
             <button class="destinations__button-style">
-              <img class="destinations__button-icon-style" src="./assets/icons/bi_arrow-right.svg" alt=""><p class="destinations__button-name">Find More</p>
+              <img class="destinations__button-icon-style" src="./assets/icons/bi_arrow-right.svg" alt=""> Find More
             </button>
           </div>
         </div>
       </section>
-      <section class="stories">
+      <section id="stories" class="stories">
         <div class="stories__conteiner">
           <h2 class="stories__title">TRAVEL STORIES</h2>
           <div class="stories__card-conteiner">
             <div class="stories__cards">
               <div class="stories__card">
-                <img class="stories__card-img" src="./assets/img/Rectangle15.png" alt="river"> 
+                <img class="stories__card-img" src="./assets/img/Rectangle29.jpg" alt="river"> 
                 <div class="stories__card-text-conteiner">
                   <h3>10 Photos of Attractive Thailand</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                 </div>
               </div>
               <div class="stories__card">
-                <img class="stories__card-img" src="./assets/img/Rectangle16.png" alt="road">
+                <img class="stories__card-img" src="./assets/img/Rectangle30.jpg" alt="road">
                 <div class="stories__card-text-conteiner">
                   <h3>Canyonlands National Park, Utah</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                 </div>
               </div>
               <div class="stories__card"> 
-                <img class="stories__card-img" src="./assets/img/Rectangle17.png" alt="mountains"> 
+                <img class="stories__card-img" src="./assets/img/Rectangle31.jpg" alt="mountains"> 
                 <div class="stories__card-text-conteiner">
                   <h3>I left my heart in the Mountains!</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
                 </div>
               </div>
               <div class="stories__card"> 
-                <img class="stories__card-img" src="./assets/img/Rectangle18.png" alt="desert"> 
+                <img class="stories__card-img" src="./assets/img/Rectangle32.jpg" alt="desert"> 
                 <div class="stories__card-text-conteiner">
                   <h3>The Longest journey in my life!</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More</a></p>
@@ -120,11 +134,27 @@
             </div>
             <footer class="footer">
               <div class="footer__conteiner">
+                <div class="footer__contact">
+                  <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img class="footer__contact-icons RS-icon" src="./assets/icons/rs_school_js.svg" alt="Rsschool">
+                  </a>
+                  <a href="https://github.com/AlexGorSer" target="_blank">
+                    <img  class="footer__contact-icons" src="./assets/icons/iconmonstr-github-1.svg" alt="GitHub">
+                  </a>  
+                </div>
                 <p class="footer__text">All Rights Reserved © Travel Portal</p>
                 <div class="footer__icons">
-                  <img src="./assets/icons/akar-icons_instagram-fill.svg" alt="instagram" class="footer__icon">
-                  <img src="./assets/icons/akar-icons_video.svg" alt="youtube" class="footer__icon">
-                  <img src="./assets/icons/akar-icons_twitter-fill.svg" alt="twitter" class="footer__icon">
+                  <ul class="footer__icons">
+                    <li>
+                      <a href="#">                      <img src="./assets/icons/akar-icons_instagram-fill.svg" alt="instagram" class="footer__icon"></a>
+                    </li>
+                    <li>
+                      <a href="#">                      <img src="./assets/icons/akar-icons_video.svg" alt="youyube" class="footer__icon"></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/icons/akar-icons_twitter-fill.svg" alt="twitter" class="footer__icon"></a>
+                    </li>
+                  </ul>
                 </div>
               </div>              
             </footer>          
@@ -133,5 +163,6 @@
       </section>
 		</div>
 	</main>
+  <script src="./index.js"></script>
 </body>
 </html>

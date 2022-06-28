@@ -405,9 +405,35 @@ html {
 
 }
 
+.footer__conteiner {
+    display: flex;
+    gap: 32.8rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.335rem;
+    justify-content: flex-end;
+    margin-right: 23rem;
+    /* justify-content: space-between; */
+}
 
+.footer__text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem1.6rem;
 
+    color: #FFFFFF;
+}
 
+.footer__icons {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    width: 33.65px;
+    height: 33.65px;
+}
 
 
 

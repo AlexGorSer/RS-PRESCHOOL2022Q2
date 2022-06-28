@@ -304,13 +304,106 @@ html {
     margin-left: 3.1rem;
 }
 
+.stories__card-conteiner {
+    background: url(../assets/img/Rectangle27.png);
+    width: 1440px;
+    height: 1331px;
+}
 
+.stories__title {
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.3rem;
 
+    color: #F2785C;
+}
 
+.stories__cards {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+    background: rgba(255, 255, 255, 0.7);
+}
 
+.stories__card-img {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+    width: 400px;
+    height: 250px;
+}
 
+.stories__card {
+    margin: 0rem 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 3rem;
+}
 
+.stories__card-text-conteiner {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
 
+    color: #0D606F;
+}
+
+.stories__card-text-conteiner p {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+}
+
+.stories__card-text-conteiner a {
+    font-style: normal;
+    font-weight: 700;
+    color: #0D606F;
+
+}
+
+.stories__card-text-conteiner h3 {
+    margin: 0rem 0rem 2.4rem 0rem;
+    padding: 0rem;
+}
+
+.stories__button {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 228px;
+    height: 59px;
+    gap: 1rem;
+    
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    color: #FFFFFF;
+
+}
 
 
 

@@ -81,17 +81,17 @@ html {
     color: #FFFFFF;
 }
 
-.head {
+.preview {
     height: 765px;
     background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png);
 }
 
-.head__content {
-    /* display: flex;
+/* .head__content {
+    display: flex;
     flex-direction: column;
     margin: 2.6rem 0rem 0rem 12rem;
-    justify-content: space-between; */
-}
+    justify-content: space-between;
+} */
 
 .content__plan{
     display: flex;
@@ -102,7 +102,7 @@ html {
     justify-content: space-between;
 }
 
-.plan__head {
+.plan__preview {
     margin: 0rem;
     padding: 0rem;
     font-family: 'Aleo';
@@ -169,6 +169,71 @@ html {
     color: #FFFFFF;
 }
 
+.steps__conteiner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9.9rem;
+}
+
+.steps__name {
+    margin: 10rem 0rem 4rem 0rem;
+    align-self: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.3rem;
+
+    color: #F2785C;
+}
+
+.steps__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__name {
+
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #0D606F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
     font-family: 'Magra';
     src: url(../assets/font/Magra-Regular.ttf);
@@ -200,4 +265,11 @@ html {
     font-style: italic;
     font-weight: 400;
     src: url(../assets/font/Aleo-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/font/Aleo-Regular.ttf);
 }

@@ -212,12 +212,97 @@ html {
     color: #0D606F;
 }
 
+.destinations__conteiner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
 
+.destinations__name {
+    margin: 0rem 0rem 4.6rem 0rem;
+    padding: 0rem;
 
+    align-self: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.3rem;
 
+    color: #F2785C;
+}
 
+.destinations__cards {
+    display: flex;
+    gap: 6rem;
+    overflow: hidden;
+}
 
+.destinations__slide {
+    border-radius: 1.6rem;
+}
 
+.destinations__nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2.4rem 0rem 4rem 0rem;
+}
+
+.destinations__nav-button {
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+    border-color: rgba(242, 120, 92, 0.5);
+    border: none;
+}
+.nav-button-active {
+    background: #F2785C;
+    
+}
+
+.destinations__nav-button:hover{
+    cursor: pointer;
+    background: #F2785C;
+}
+.destinations__button {
+    display: flex;
+    align-self: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 1rem;
+}
+
+.destinations__button-name {
+    margin: 1.35rem 3.1rem 1.35rem 0rem;
+    color: #FFFFFF;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.destinations__button-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 1rem;
+    border: none;
+}
+
+.destinations__button-icon-style {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 3.1rem;
+}
 
 
 

@@ -19,13 +19,14 @@ html {
 .header__logo {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 1rem;
     margin-left: 12rem;
 }
 
 .logo__img {
     width: 3rem;
     height: 3rem;
+    margin-bottom: 1rem;
 }
 
 .logo__name {
@@ -39,7 +40,7 @@ html {
 }
 
 .header__navigation {
-    margin: 2.9rem 0px 4rem 0px;
+    margin: 3.4rem 27px 0rem 0px;
 }
 
 .navigation__menu {
@@ -76,9 +77,9 @@ html {
     justify-content: center;
     width: 10.3rem;
     height: 4.1rem;
-    margin: 1.9rem 12rem 3rem 0px;
+    margin: 2.5rem 11.9rem 3rem 0px;
     cursor: pointer;
-
+    border-style: none;
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
@@ -120,8 +121,9 @@ html {
     display: flex;
     flex-direction: column;
     width: 892px;
-    height: 422px;
-    margin: 2.6rem 0rem 0rem 12rem;
+    /* height: 422px; */
+    gap: 3.4rem;
+    margin: 3rem 0rem 0rem 12rem;
     justify-content: space-between;
 }
 
@@ -155,6 +157,7 @@ html {
     align-items: center;
     /* width: 892px;
     height: 95px; */
+    margin-top: 1.2rem;
     
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
@@ -176,12 +179,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.35rem 3.25rem;
+    padding: 1.35rem 3.4rem 1.35rem 3.3rem;
     margin: 1.8rem;
     cursor: pointer;
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
+    border-style: none;
 
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -204,12 +208,12 @@ html {
 .steps__conteiner {
     display: flex;
     flex-direction: column;
-    padding-bottom: 9.9rem;
+    padding-bottom: 9.7rem;
     
 }
 
 .steps__name {
-    margin: 10rem 0rem 4rem 0rem;
+    margin: 8rem 0rem 4rem 0rem;
     align-self: center;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -225,6 +229,10 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.pixel-fix {
+    margin-left: 7rem;
 }
 
 .steps__content {
@@ -382,6 +390,7 @@ html {
     align-items: center;
     color: #FFFFFF;
     gap: 1rem;
+    margin-left: 0.3rem;
 }
 
 
@@ -405,7 +414,7 @@ html {
     border-radius: 1rem;
     border: none;
 
-    padding: 1.35rem 3.1rem 1.35rem 0rem;
+    padding: 1rem 3.4rem 0.9rem 0rem;
     color: #FFFFFF;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -436,7 +445,8 @@ html {
 
 .stories__title {
     margin: 0rem;
-    padding: 3.32rem;
+    /* padding: 3.32rem; */
+    margin-bottom: 4rem;
     text-align: center;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -451,12 +461,14 @@ html {
     display: flex;
     flex-direction: column;
     /* gap: 3rem; */
+    padding-top: 10px;
     background: rgba(255, 255, 255, 0.7);
 }
 
 .stories__card-img {
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
+    /* padding-top: 10px; */
     width: 400px;
     height: 250px;
 }
@@ -464,8 +476,8 @@ html {
 .stories__card {
     margin: 0rem 12rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 4rem;
     padding-top: 3rem;
 }
@@ -479,7 +491,7 @@ html {
     color: #F2785C;
 }
 
-.stories__card-text-conteiner {
+.stories__card-text-conteiner h3 {
     margin: 0rem;
     padding: 0rem;
     font-family: 'Aleo';
@@ -517,7 +529,7 @@ html {
 .stories__button {
     display: flex;
     margin-top: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4.1rem;
     align-items: center;
     align-self: center;
     justify-content: center;
@@ -525,6 +537,9 @@ html {
     height: 59px;
     gap: 1rem;
     cursor: pointer;
+    padding: 0rem;
+    padding-right: 10px;
+    margin-left: 5px;
 
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -554,7 +569,7 @@ html {
     display: flex;
     gap: 32.8rem;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 0.5rem;
     margin-bottom: 1.335rem;
     justify-content: flex-end;
@@ -574,9 +589,11 @@ html {
 
 .footer__icons {
     display: flex;
-    gap: 2rem;
+    gap: 1.9rem;
     width: 33.65px;
     list-style-type: none;
+    padding: 0rem;
+    /* padding-left: 0.2rem; */
     /* height: 33.65px; */
 
 }

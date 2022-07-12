@@ -4,7 +4,7 @@ html {
 }
 
 .wrapper {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0px auto;
 }
 
@@ -120,7 +120,7 @@ html {
 .content__plan{
     display: flex;
     flex-direction: column;
-    width: 892px;
+    max-width: 892px;
     /* height: 422px; */
     gap: 3.4rem;
     margin: 3rem 0rem 0rem 12rem;
@@ -439,8 +439,8 @@ html {
 
 .stories__card-conteiner {
     background: url(../assets/img/Rectangle33.jpg);
-    width: 1440px;
-    height: 1331px;
+    max-width: 1440px;
+    max-height: 1331px;
 }
 
 .stories__title {
@@ -511,7 +511,7 @@ html {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.4rem;
-
+    color: #0D606F;
 }
 
 .stories__card-text-conteiner a {
@@ -524,6 +524,7 @@ html {
 .stories__card-text-conteiner h3 {
     margin: 0rem 0rem 2.4rem 0rem;
     padding: 0rem;
+    color: #0D606F;
 }
 
 .stories__button {
@@ -612,6 +613,223 @@ html {
 }
 .RS-icon {
     width: 100px;
+}
+
+@media screen and (max-width: 1362px) {
+    .preview__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__conteiner {
+        display: none;
+    }
+    .plan__preview {
+        display: none;
+    }
+    .plan__info {
+        display: none;
+    }
+    .content__plan {
+        margin: 0rem;
+    }
+    .preview {
+        background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash2Mini.jpg);
+        height: 0%;
+    }
+
+    .plan__start {
+        margin: 6.1rem 1.5rem 6.1rem 1.5rem;
+    }
+    .plan__text {
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 1.6rem;
+        margin-right: 4rem;
+    }
+
+    .plan__button {
+        margin: 0rem;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding: 0.75rem 0.9rem;
+        margin: 0.9rem;
+    }
+    .steps__name {
+        margin: 2rem 0rem 2rem 0rem;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .steps__content {
+        margin: 0rem;
+        gap: 7rem;
+        margin: 0rem 1.5rem;
+    }
+
+    .pixel-fix {
+        margin: 0rem;
+    }
+    .steps__card {
+        display: block;
+    }
+    .steps__card img{
+        width: 70px;
+        height: 70px;
+    }
+    .card__name {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 2rem 0rem 0rem 0rem;
+    }
+    .steps__conteiner {
+        padding-bottom: 2rem;
+    }
+    .destinations__name {
+        margin: 0rem 0rem 2rem 0rem;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .destinations__slide-back {
+        width: 360px;
+        height: 210px;        
+    }
+    .destinations__cards p{
+        margin: 0rem;
+        padding: 0.8rem 0rem 0rem 1.5rem;
+        flex-direction: row;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    .japan {
+        background: url(../assets/img/Rectangle34Mini.jpg);
+    }
+    .sea {
+        background: url(../assets/img/Rectangle26Mini.jpg);
+    }
+    .usa {
+        background: url(../assets/img/Rectangle34Mini.jpg);
+    }
+    .destinations__nav {
+        display: none;
+    }
+    .destinations__button-style {
+        margin-top: 1rem;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding: 0.75rem 1.2rem 0.75rem 0.6rem;
+    }
+    .destinations__button-icon-style {
+        width: 8.75px;
+        height: 5.63px;
+        margin-left: 1.2rem;
+    }
+    .destinations__conteiner {
+        padding-bottom: 2rem;
+    }
+
+    .stories__title {
+        margin-bottom: 1rem;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    .stories__card-conteiner {
+        background: url(../assets/img/Rectangle28Mini.jpg);
+        background-repeat: no-repeat;
+    }
+    .stories__cards {
+        gap: 1.3rem;
+    }
+    .stories__card{
+        margin: 0rem 1.5rem;
+        padding: 0rem;
+        gap: 1rem;
+    }
+    .stories__card-img {
+        width: 155px;
+        height: 130px;
+    }
+    .stories__card-text-conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+    .stories__card-text-conteiner h3 {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    .stories__card-text-conteiner p {
+        width: 195px;
+        height: 102px;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    }
+    .stories__button {
+        margin: 0rem 0rem 1.3rem 0rem;
+        width: 92px;
+        height: 30px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding-right: 1.35rem;
+        /* padding: 0.75rem 1.35rem 0.75rem 0.6rem; */
+        gap: 0.6rem;
+    }
+    .stories__button img {
+        width: 8.75px;
+        height: 5.63px;
+        margin-left: 1.2rem;
+    }
+    .footer__conteiner{
+        margin: 0rem;
+        padding: 0rem;
+        gap: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__contact{
+        display: none;
+    }
+    .footer__text {
+        display: none;
+    }
+    .footer__icons {
+        width: 0%;
+        gap: 2rem;
+        margin: 1.5rem 0rem 1.63rem 0rem;
+        padding: 0rem;
+    }
 }
 
 @font-face {

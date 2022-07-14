@@ -70,6 +70,7 @@ html {
 }
 .burger__button  div {
     border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
     width: 2.6rem;
     gap: 0.4rem;
     border-radius: 1rem;
@@ -549,12 +550,28 @@ html {
     background: rgba(255, 255, 255, 0.7);
 }
 
+.river {
+    background: url(../assets/img/Rectangle29.jpg);
+}
+
+.road {
+    background: url(../assets/img/Rectangle30.jpg);
+}
+.mountains {
+    background: url(../assets/img/Rectangle31.jpg);
+}
+
+.desert {
+    background: url(../assets/img/Rectangle32.jpg);
+}
+
 .stories__card-img {
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
     /* padding-top: 10px; */
-    width: 400px;
-    height: 250px;
+    /* width: 400px;
+    height: 250px; */
+    padding: 25rem 25rem 0rem 15rem;
 }
 
 .stories__card {
@@ -928,9 +945,25 @@ html {
         margin-bottom: 15px;
     }
     .stories__card-img {
-        width: 155px;
-        height: 130px;
-    }
+        padding: 13rem 8rem 0rem 7rem;
+        background-repeat: no-repeat;
+    }   
+    .river {
+        background-image: url(../assets/img/Rectangle15mobail.jpg);
+     }
+
+     .road {
+        background-image: url(../assets/img/Rectangle16mobail.png);
+     }
+
+     .mountains {
+        background-image: url(../assets/img/Rectangle27Mobail.png);
+     }
+
+     .desert {
+        background-image: url(../assets/img/Rectangle17Mobail.png);
+     }
+
     .stories__card-text-conteiner{
         /* display: flex;
         flex-direction: column; */
@@ -998,7 +1031,7 @@ html {
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 391px){
     .preview {
         background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash2Mini.jpg);
         height: 0%;
@@ -1032,6 +1065,10 @@ html {
 }
 
 @media screen and (max-width: 370px) {
+
+    .stories__card {
+        align-items: center;
+    }
     .destinations__slide-back {
         width: 280px;
     }

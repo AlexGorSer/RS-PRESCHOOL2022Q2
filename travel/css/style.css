@@ -575,6 +575,14 @@ html {
     color: #F2785C;
 }
 
+.stories__card-text-conteiner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
 .stories__card-text-conteiner h3 {
     margin: 0rem;
     padding: 0rem;
@@ -699,7 +707,17 @@ html {
     width: 100px;
 }
 
-@media screen and (max-width: 1362px) {
+@media screen and (max-width: 1300px) {
+    .footer__contact {
+        display: none;
+    }
+
+    .content__plan {
+        margin: 3rem 0rem 0rem 6rem;
+    }
+}
+
+@media screen and (max-width: 954px) {
 
     .burger__menu {
         position: fixed;
@@ -709,6 +727,7 @@ html {
 
     .burger__menu-active {
         right: 0%;
+        z-index: 1;
     }
 
     .navigation__menu {
@@ -736,10 +755,6 @@ html {
     }
     .content__plan {
         margin: 0rem;
-    }
-    .preview {
-        background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash2Mini.jpg);
-        height: 0%;
     }
 
     .plan__start {
@@ -895,9 +910,13 @@ html {
         font-size: 1.4rem;
         line-height: 1.9rem;
     }
-    .stories__card-conteiner {
-        background: url(../assets/img/Rectangle28Mini.jpg);
-        background-repeat: no-repeat;
+    .preview {
+        /* background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash2Mini.jpg); */
+        height: 0%;
+    }
+
+    .destinations__cards {
+        justify-content: center;
     }
     /* .stories__cards {
         gap: 1.5rem;
@@ -976,6 +995,62 @@ html {
         margin: 1.5rem 0rem 1.3rem 0rem;
         padding: 0rem;
         margin-left: 9px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .preview {
+        background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash2Mini.jpg);
+        height: 0%;
+        background-repeat: no-repeat;
+    }
+    .stories__card-conteiner {
+        background: url(../assets/img/Rectangle28Mini.jpg);
+    }
+    .destinations__cards {
+        justify-content: normal;
+    }
+    
+}
+@media screen and (max-width: 389px) {
+
+    .stories__card-text-conteiner {
+        display: block;
+    }
+    .destinations__cards {
+        padding-left: 1rem;
+    }
+    .slide__arrow-conteiner {
+        gap: 28rem;
+    }
+    .steps__content {
+        gap: 0rem;
+    }
+    .destinations__slide-back {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .destinations__slide-back {
+        width: 280px;
+    }
+    .destinations__cards {
+        padding-left: 3rem;
+    }
+
+    .slide__arrow-conteiner {
+        gap: 24rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .destinations__slide-back {
+        width: 230px;
+    }
+
+    .slide__arrow-conteiner {
+        gap: 15rem;
     }
 }
 

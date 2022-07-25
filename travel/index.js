@@ -28,3 +28,55 @@ burgerConteiner.addEventListener('click', (e) => {
         burgerConteiner.classList.remove('burger__menu-active');
     }
 })
+
+//Pop-up login
+
+const buttonLogin = document.querySelector('.button__login'),
+        loginpopUp = document.querySelector('.login'),
+        loginReg = document.querySelector('.login__register'),
+        loginSignIn = document.querySelector('.login__sign-in'),
+        loginCreate = document.querySelector('.login__create'),
+        register = document.querySelector('.register'),
+        loginForm = document.querySelectorAll('.login__form'),
+        navAccount = document.querySelector('.account');
+
+
+buttonLogin.addEventListener('click', (e) => {
+        loginpopUp.classList.add('login-active');
+});
+
+navAccount.addEventListener('click', (e) => {
+    loginpopUp.classList.add('login-active');
+});
+
+
+
+loginpopUp.addEventListener('click', (e) => {
+    if (e.target === loginpopUp) {
+        loginpopUp.classList.remove('login-active');
+    }
+});
+
+loginReg.addEventListener('click', () => {
+    loginSignIn.classList.toggle('hide');
+    loginCreate.classList.toggle('active');
+});
+
+register.addEventListener('click', () => {
+    loginCreate.classList.toggle('active');
+    loginSignIn.classList.toggle('hide');
+});
+
+loginForm.forEach((loginForm) => {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(loginForm);
+    
+        const email = formData.get('email');
+        const pass = formData.get('password');
+    
+        alert(`Ваш email ${email}. Ваш пароль ${pass}.`);
+    })
+})
+
+

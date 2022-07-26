@@ -319,6 +319,8 @@ html {
     display: flex;
     flex-direction: column;
     padding-bottom: 8rem;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
     
 }
 
@@ -339,8 +341,9 @@ html {
 .destinations__cards {
     display: flex;
     gap: 6rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
+    transition: all 0.7s ease-in-out;
 }
 
 .destinations__slide {
@@ -955,6 +958,10 @@ hr {
     display: none;
 }
 
+.slide-active{
+    display: block;
+}
+
 @media screen and (max-width: 1300px) {
     .footer__contact {
         display: none;
@@ -1288,7 +1295,7 @@ hr {
     }
 
     .login__title {
-        padding: 2.5rem 8.1rem 3rem 8.1rem;
+        padding: 2.5rem 7.1rem 3rem 7.1rem;
     }
 
     .title-size {
@@ -1306,9 +1313,9 @@ hr {
     .stories__card-conteiner {
         background: url(../assets/img/Rectangle28Mini.jpg);
     }
-    .destinations__cards {
+    /* .destinations__cards {
         justify-content: normal;
-    }
+    } */
     
 }
 @media screen and (max-width: 389px) {
@@ -1316,9 +1323,9 @@ hr {
     .stories__card-text-conteiner {
         display: block;
     }
-    .destinations__cards {
+    /* .destinations__cards {
         padding-left: 1rem;
-    }
+    } */
     .slide__arrow-conteiner {
         gap: 28rem;
     }
@@ -1338,9 +1345,9 @@ hr {
     .destinations__slide-back {
         width: 280px;
     }
-    .destinations__cards {
+    /* .destinations__cards {
         padding-left: 3rem;
-    }
+    } */
 
     .slide__arrow-conteiner {
         gap: 24rem;

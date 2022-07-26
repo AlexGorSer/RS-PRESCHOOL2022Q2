@@ -74,9 +74,63 @@ loginForm.forEach((loginForm) => {
     
         const email = formData.get('email');
         const pass = formData.get('password');
-    
-        alert(`Ваш email ${email}. Ваш пароль ${pass}.`);
+        if (email === '') {
+            alert('Введите email');
+        } else if (pass === ''){
+            alert('Введите password');
+        } else {
+            alert(`Ваш email ${email}.\nВаш пароль ${pass}.`);
+        }
+        
     })
+});
+
+
+// Slider
+
+
+const leftArrow = document.querySelector('.arrow-left'),
+      rightArrow = document.querySelector('.arrow-right'),
+      destinationSlide = document.querySelectorAll('.destinations__slide'),
+      destinationButtons = document.querySelectorAll('.destinations__nav-button'),
+      slideConteiner = document.querySelector('.destinations__cards');
+
+let sliderIndex = 1;
+
+// const actSlide = n => {
+//     for (slide of slides) {
+//         slide.classList.remove('')
+//     }
+// }
+
+
+// const slide = () => {
+//     if (sliderIndex == destinationSlide.length - 1) {
+//         sliderIndex = 0;
+//     } else {
+//         sliderIndex++;
+//     }
+// }
+
+let imgSlide = document.querySelector('.destinations__slide-back').clientWidth;
+
+leftArrow.addEventListener('click', () => {
+    sliderIndex--;
+    if (sliderIndex < 0){
+        sliderIndex = destinationSlide.length -1;
+    }
+    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
+    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
 })
 
+rightArrow.addEventListener('click', () => {
+    sliderIndex++;
+    if (sliderIndex >= destinationSlide.length - 1){  
+        sliderIndex = 0;     
+    }
+    
+    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
+    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+})
 
+// slideConteiner.style.transform = `translateX(${-(imgSlide + 60)}px)`

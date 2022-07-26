@@ -11,6 +11,49 @@
 </head>
 <body>
 	<main class="main">
+    <aside class="login">
+      <div class="login__conteiner">
+        <div class="login__sign-in">
+          <h2 class="login__title">Log in to your account</h2>
+          <div class="login__facebook">
+            <img src="./assets/icons/path14.svg" alt="facebook" class="login__icon">
+            <p class="login__facebook-name">Sign In with Facebook</p>
+          </div>
+          <div class="login__google">
+            <img src="./assets/icons/GoogleLogo.svg" alt="google" class="login__icon">
+            <p class="login__google-name">Sign In with Google</p>
+          </div>
+          <div class="login__or">
+            <hr>
+            <span>or</span>
+            <hr>
+          </div>
+          <form action="" class="login__form">
+            <h2 class="login__mail">E-mail</h2>
+            <input type="email" name="email" id="email">
+            <h2 class="login__mail password">Password</h2>
+            <input type="password" name="password" id="password">
+            <input class="login__submit" type="submit" value="Sign In">
+          </form>
+          <a class="login__forgot" href="#">Forgot Your Password?</a>
+          <div class="login__line"></div>
+          <div class="login__dont-have">Don’t have an account?  <a class="login__register" href="#">Register</a></div>
+        </div>
+        <div class="login__create">
+          <h2 class="login__title title-size">Create account</h2>
+          <form action="" class="login__form">
+            <h2 class="login__mail">E-mail</h2>
+            <input type="email" name="email" id="email">
+            <h2 class="login__mail password">Password</h2>
+            <input type="password" name="password" id="password">
+            <input class="login__submit" type="submit" value="Sign In">
+          </form>
+          <div class="login__line"></div>
+          <div class="login__dont-have">Already have an account?  <a class="login__register register" href="#">Log in</a></div>
+        </div>
+        </div>
+      </div>
+    </aside>
 		<div class="wrapper">
 			<section class="preview">
 				<header class="header">
@@ -33,7 +76,7 @@
                       <a class="navigation__menu" href="#stories">Travel Stories</a>
                     </li>
                     <li>
-                      <a class="navigation__menu" href="#">Account</a>
+                      <a class="navigation__menu account" href="#">Account</a>
                     </li>
                     <li>
                       <a class="navigation__menu" href="#media">Social Media</a>
@@ -106,7 +149,7 @@
       <section id="destinations" class="destinations">
         <div class="destinations__conteiner">
           <h2 class="destinations__name">POPULAR DESTINATIONS</h2>
-          <div class="destinations__cards">
+          <div class="destinations__cards" style="transform: translate(0px);">
             <div class="destinations__slide">
               <div class="destinations__slide-back sea"><p>SPAIN</p></div>
             </div>
@@ -123,12 +166,12 @@
         <div>      
         </div>
         <div class="slide__arrow-conteiner">
-          <img src="../travel/assets/icons/VectorRight.svg" alt="leftArrow" class="slide__arrow rotate">
-          <img src="../travel/assets/icons/VectorRight.svg" alt="righnArrow" class="slide__arrow arrow-active">
+          <img src="../travel/assets/icons/VectorRight.svg" alt="leftArrow" class="slide__arrow rotate arrow-left">
+          <img src="../travel/assets/icons/VectorRight.svg" alt="righnArrow" class="slide__arrow arrow-right">
         </div>
         <div class="destination__nav-incard-conteiner">
-          <div class="destinations__nav-button nav-button-active"></div>
           <div class="destinations__nav-button"></div>
+          <div class="destinations__nav-button nav-button-active"></div>
           <div class="destinations__nav-button"></div>
          </div>
         <div class="destinations__nav">
@@ -220,6 +263,7 @@
           </div>
         </div>
       </section>
+
 		</div>
 	</main>
   <script src="./index.js"></script>

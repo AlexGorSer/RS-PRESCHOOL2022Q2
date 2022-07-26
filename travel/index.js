@@ -28,3 +28,112 @@ burgerConteiner.addEventListener('click', (e) => {
         burgerConteiner.classList.remove('burger__menu-active');
     }
 })
+
+//Pop-up login
+
+const buttonLogin = document.querySelector('.button__login'),
+        loginpopUp = document.querySelector('.login'),
+        loginReg = document.querySelector('.login__register'),
+        loginSignIn = document.querySelector('.login__sign-in'),
+        loginCreate = document.querySelector('.login__create'),
+        register = document.querySelector('.register'),
+        loginForm = document.querySelectorAll('.login__form'),
+        navAccount = document.querySelector('.account');
+
+
+buttonLogin.addEventListener('click', (e) => {
+        loginpopUp.classList.add('login-active');
+});
+
+navAccount.addEventListener('click', (e) => {
+    loginpopUp.classList.add('login-active');
+});
+
+
+
+loginpopUp.addEventListener('click', (e) => {
+    if (e.target === loginpopUp) {
+        loginpopUp.classList.remove('login-active');
+    }
+});
+
+loginReg.addEventListener('click', () => {
+    loginSignIn.classList.toggle('hide');
+    loginCreate.classList.toggle('active');
+});
+
+register.addEventListener('click', () => {
+    loginCreate.classList.toggle('active');
+    loginSignIn.classList.toggle('hide');
+});
+
+loginForm.forEach((loginForm) => {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(loginForm);
+    
+        const email = formData.get('email');
+        const pass = formData.get('password');
+        if (email === '') {
+            alert('Введите email');
+        } else if (pass === ''){
+            alert('Введите password');
+        } else {
+            alert(`Ваш email ${email}.\nВаш пароль ${pass}.`);
+        }
+        
+    })
+});
+
+
+// Slider
+
+
+const leftArrow = document.querySelector('.arrow-left'),
+      rightArrow = document.querySelector('.arrow-right'),
+      destinationSlide = document.querySelectorAll('.destinations__slide'),
+      destinationButtons = document.querySelectorAll('.destinations__nav-button'),
+      slideConteiner = document.querySelector('.destinations__cards');
+
+let sliderIndex = 1;
+
+// const actSlide = n => {
+//     for (slide of slides) {
+//         slide.classList.remove('')
+//     }
+// }
+
+
+// const slide = () => {
+//     if (sliderIndex == destinationSlide.length - 1) {
+//         sliderIndex = 0;
+//     } else {
+//         sliderIndex++;
+//     }
+// }
+
+let imgSlide = document.querySelector('.destinations__slide-back').clientWidth;
+
+leftArrow.addEventListener('click', () => {
+    sliderIndex--;
+    if (sliderIndex < 0){
+        sliderIndex = destinationSlide.length -1;
+    }
+    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
+    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+})
+
+rightArrow.addEventListener('click', () => {
+    sliderIndex++;
+    if (sliderIndex >= destinationSlide.length - 1){  
+        sliderIndex = 0;     
+    }
+    
+    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
+    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+})
+
+// slideConteiner.style.transform = `translateX(${-(imgSlide + 60)}px)`
+
+
+alert('Привет, будте добры проверте перед дедлайном, я все еще пытаюсь наладить слайдер, спасибо за понимание')

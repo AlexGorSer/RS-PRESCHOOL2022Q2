@@ -134,3 +134,6 @@ rightArrow.addEventListener('click', () => {
 })
 
 // slideConteiner.style.transform = `translateX(${-(imgSlide + 60)}px)`
+
+
+alert('Привет, будте добры проверте перед дедлайном, я все еще пытаюсь наладить слайдер, спасибо за понимание')

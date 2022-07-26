@@ -92,48 +92,126 @@ loginForm.forEach((loginForm) => {
 const leftArrow = document.querySelector('.arrow-left'),
       rightArrow = document.querySelector('.arrow-right'),
       destinationSlide = document.querySelectorAll('.destinations__slide'),
-      destinationButtons = document.querySelectorAll('.destinations__nav-button'),
+      destcopButtons = document.querySelectorAll('.destcop'),
+      mobileButtons = document.querySelectorAll('.incard'),
       slideConteiner = document.querySelector('.destinations__cards');
 
-let sliderIndex = 1;
-
-// const actSlide = n => {
-//     for (slide of slides) {
-//         slide.classList.remove('')
-//     }
-// }
 
 
-// const slide = () => {
-//     if (sliderIndex == destinationSlide.length - 1) {
-//         sliderIndex = 0;
-//     } else {
-//         sliderIndex++;
-//     }
-// }
+destcopButtons[0].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${(imgSlide + 60)}px)`
+    destcopButtons[0].classList.add('nav-button-active');
+    destcopButtons[1].classList.remove('nav-button-active');
+    destcopButtons[2].classList.remove('nav-button-active');
+ })
 
+ destcopButtons[1].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${(0)}px)`
+    destcopButtons[0].classList.remove('nav-button-active');
+    destcopButtons[1].classList.add('nav-button-active');
+    destcopButtons[2].classList.remove('nav-button-active');
+ })
+
+ destcopButtons[2].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${-(imgSlide + 60)}px)`
+    destcopButtons[0].classList.remove('nav-button-active');
+    destcopButtons[1].classList.remove('nav-button-active');
+    destcopButtons[2].classList.add('nav-button-active');
+ })
+
+ mobileButtons[0].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${(imgSlide + 60)}px)`
+    mobileButtons[0].classList.add('nav-button-active');
+    mobileButtons[1].classList.remove('nav-button-active');
+    mobileButtons[2].classList.remove('nav-button-active');
+ })
+
+ mobileButtons[1].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${(0)}px)`
+    mobileButtons[0].classList.remove('nav-button-active');
+    mobileButtons[1].classList.add('nav-button-active');
+    mobileButtons[2].classList.remove('nav-button-active');
+ })
+
+ mobileButtons[2].addEventListener('click', () => {
+    slideConteiner.style.transform = `translate(${-(imgSlide + 60)}px)`
+    mobileButtons[0].classList.remove('nav-button-active');
+    mobileButtons[1].classList.remove('nav-button-active');
+    mobileButtons[2].classList.add('nav-button-active');
+ })
+
+let buttonSlideIndex = 1;
+let sliderIndex = 0;
 let imgSlide = document.querySelector('.destinations__slide-back').clientWidth;
 
-leftArrow.addEventListener('click', () => {
-    sliderIndex--;
-    if (sliderIndex < 0){
-        sliderIndex = destinationSlide.length -1;
+const buttonActiv = function(index) {
+    for(button of mobileButtons) {
+        button.classList.remove('nav-button-active');
     }
-    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
-    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+    mobileButtons[index].classList.add('nav-button-active');
+}
+rightArrow.classList.add('arrow-active');
+leftArrow.classList.add('arrow-active');
+
+leftArrow.addEventListener('click', () => {
+    buttonSlideIndex--
+    sliderIndex--
+    // console.log(sliderIndex);
+    if (sliderIndex < -1) {
+        sliderIndex = destinationSlide.length-2;
+    }
+    rollSlide();
+    buttonActiv(sliderIndex+1);
 })
 
 rightArrow.addEventListener('click', () => {
-    sliderIndex++;
-    if (sliderIndex >= destinationSlide.length - 1){  
-        sliderIndex = 0;     
+    buttonSlideIndex++
+    sliderIndex++
+    // console.log(sliderIndex);
+    if (sliderIndex >= destinationSlide.length-1) {
+        sliderIndex = -1;
     }
-    
-    slideConteiner.style.transform = `translate(${- sliderIndex *(imgSlide + 60)}px)`
-    // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
-})
+    rollSlide();
+    buttonActiv(sliderIndex+1);
+});
+
+
+function rollSlide(){
+    slideConteiner.style.transform = `translate(${- sliderIndex * (imgSlide + 60)}px)`
+}
+
+
+
+
+
+
+
+
+
+
+// leftArrow.addEventListener('click', () => {
+//     if (sliderIndex > 0){
+//         sliderIndex--;
+//         // sliderIndex = destinationSlide.length -1;
+//     }
+//     console.log(sliderIndex);
+//     slideConteiner.style.transform = `translate(${(imgSlide + 60)}px)`
+//     // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+// })
+
+// rightArrow.addEventListener('click', () => {  
+//     sliderIndex++;
+//     if (sliderIndex <= destinationSlide.length){  
+        
+//     }
+//     console.log(sliderIndex);
+//     slideConteiner.style.transform = `translate(${-(imgSlide + 60)}px)`
+//     // slideConteiner.style.transform = 'translate(-' + sliderIndex * imgSlide +'px)'
+// })
 
 // slideConteiner.style.transform = `translateX(${-(imgSlide + 60)}px)`
 
 
-alert('Привет, будте добры проверте перед дедлайном, я все еще пытаюсь наладить слайдер, спасибо за понимание')
+
+
+// alert('Привет, будте добры проверте перед дедлайном, я все еще пытаюсь наладить слайдер, спасибо за понимание')

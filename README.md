@@ -1,2 +1,1 @@
-# alexgorser-JSFEPRESCHOOL2022Q2
-Private repository for @alexgorser
+# stage1-tasks

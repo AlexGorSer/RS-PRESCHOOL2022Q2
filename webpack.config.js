@@ -48,8 +48,18 @@ const config = {
                 use: [stylesHandler,'css-loader'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+                test: /\.(eot|ttf|woff|woff2)$/i,
                 type: 'asset',
+                generator: {
+                    filename: 'assets/fonts/[name][ext]'
+                }
+            },
+            {
+                test: /\.(svg|png|jpg|gif)$/i,
+                type: 'asset',
+                generator: {
+                    filename: 'assets/img/[name][ext]'
+                }
             },
 
             // Add your rules for custom modules here

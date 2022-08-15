@@ -1,5 +1,4 @@
 'use strict';
-
 const momentumTime = document.querySelector('.time'),
       momentumGriitings = document.querySelector('.greeting'),
       momentumDate = document.querySelector('.date');

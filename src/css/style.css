@@ -207,6 +207,10 @@ body {
   margin-bottom: 20px;
 }
 
+input {
+  text-transform: capitalize;  
+}
+
 .greeting-container {
   display: flex;
   flex-wrap: wrap;

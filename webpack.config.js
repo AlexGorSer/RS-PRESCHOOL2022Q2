@@ -30,7 +30,7 @@ const config = {
         new CopyPlugin({
             patterns: [
                 { from: './src/assets/sounds/*.mp3', to:'./assets/sounds/[name][ext]'},
-                // { from: './src/assets/img/*.jpg', to:'./assets/img/[name][ext]'},
+                { from: './src/js/*.json', to:'./js/[name][ext]'},
                 // { from: './src/assets/svg/*.svg', to:'./assets/svg/[name][ext]'},
             ]  
         })

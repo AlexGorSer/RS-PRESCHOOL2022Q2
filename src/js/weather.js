@@ -39,7 +39,7 @@ setInterval(getNone, 5000);
 
 // setInterval(()=> {getWeather(inputCity.value);}, 100000);
 
-  getWeather(localStorage.getItem('inputCity'));
+  // getWeather(localStorage.getItem('inputCity'));
 
   inputCity.addEventListener('change', () => {
     getWeather(inputCity.value);

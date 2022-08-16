@@ -15,8 +15,8 @@ export async function getWeather(city = 'минск') {
     const data = await res.json();
 
     weatherError.textContent = '';
-    weatherHumidity.textContent = `${Math.ceil(data.main.humidity)}%`;
-    weatherWind.textContent = `${Math.ceil(data.wind.speed)}м/с`
+    weatherHumidity.textContent = `Влажность: ${Math.ceil(data.main.humidity)}%`;
+    weatherWind.textContent = `Скорость ветра: ${Math.ceil(data.wind.speed)}м/с`
     weatherIcon.className = 'weather-icon owf';
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
     temperature.textContent = `${Math.ceil(data.main.temp)}°C`;
@@ -24,7 +24,12 @@ export async function getWeather(city = 'минск') {
           .replace(/(^|\s)\S/g, (a) => a.toUpperCase());
           
   } catch {
-    weatherError.textContent = 'Неправельное набран город. При пустой строке произойдет автозаполнение на город "Минск".';
+    weatherIcon.className = 'weather-icon owf';
+    weatherHumidity.textContent = '';
+    weatherWind.textContent = '';
+    temperature.textContent = '';
+    weatherDes.textContent = '';
+    weatherError.textContent = 'Неправельное набран город. При пустой через 5 секунд в строке произойдет автозаполнение на город "Минск".';
   }
 
   };
@@ -32,14 +37,15 @@ export async function getWeather(city = 'минск') {
 function getNone() {
   if(inputCity.value == '') {
     inputCity.value = 'Минск';
+    getWeather(inputCity.value);
   }
 };
 
 setInterval(getNone, 5000);
 
-// setInterval(()=> {getWeather(inputCity.value);}, 100000);
+setInterval(()=> {getWeather(inputCity.value);}, 100000);
 
-  // getWeather(localStorage.getItem('inputCity'));
+  getWeather(localStorage.getItem('inputCity'));
 
   inputCity.addEventListener('change', () => {
     getWeather(inputCity.value);

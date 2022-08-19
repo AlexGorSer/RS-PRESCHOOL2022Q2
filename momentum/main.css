@@ -565,6 +565,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: .3s;
 }
 
 body {
@@ -824,6 +825,66 @@ input {
 
 .author {
   min-height: 20px;
+}
+
+.langauge-conteiner {
+  display: flex;
+  gap: 10px;
+  align-self: flex-start;
+}
+.ru {
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+.ru:hover {
+  opacity: 1;
+}
+
+.en {
+  cursor: pointer;
+  opacity: .8;
+  transition: .4s;
+}
+
+.en:hover {
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.settings {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  align-self: flex-end;
+
+}
+
+.input-lable{
+  opacity: .8;
+}
+
+.input-lable input{
+ cursor: pointer;
+}
+
+.input-lable:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.audio-player {
+  width: 270px;
+  margin-top: 10px;
+}
+
+.player{
+  z-index: 10;
 }
 
 @media (max-width: 768px) {

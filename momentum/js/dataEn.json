@@ -1,0 +1,98 @@
+[
+    {
+        "text": "Write code as if it were accompanied by a violent psychopath who knows where you live",
+        "author": "Steve McConnell"
+    },
+    {
+        "text": "Program complexity grows until it exceeds the programmer's ability",
+        "author": "Arthur Bloch. Murphy's Laws"
+    },
+    {
+        "text": "Walking on water and developing software following the ToR is very easy... if it's frozen",
+        "author": "I. Berard"
+    },
+    {
+        "text": "Programming today is a race of software developers striving to write programs with more and better idiot resistance, and the universe trying to create more select idiots. As long as the universe wins.",
+        "author": "Rick Cook"
+    },
+    {
+        "text": "A low-level language is when you need to pay attention to things that have nothing to do with programs written in that language.",
+        "author": "Alan J. Perlis"
+    },
+    {
+        "text": "C programming is like dancing fast on a freshly polished floor of people with sharp razors in their hands.",
+        "author": "Waldi Ravens"
+    },
+    {
+        "text": "Don't worry if something doesn't work. If everything worked, you'd be fired.",
+        "author": "Mosher's Law of Software Engineering"
+    },
+    {
+        "text": "For a long time it was a mystery to me how something very expensive and technologically advanced could be so useless. And soon I realized that a computer is a stupid machine that has the ability to do incredibly smart things, while programmers are smart people who have the talent to do incredible stupid things. In short, they found each other.",
+        "author": "Bill Bryson"
+    },
+    {
+        "text": "In good design, adding something costs less than the thing itself.",
+        "author": "Thomas C. Gale"
+    },
+    {
+        "text": "In theory, theory and practice are inseparable. In practice, they are not.",
+        "author": "Yoggi Berra"
+    },
+    {
+        "text": "Perl is the language that looks the same before and after RSA encryption.",
+        "author": "Keith Bostic"
+    },
+    {
+        "text": "I invented the term 'object-oriented', and I can claim I didn't mean C++.",
+        "author": "Alan Kay"
+    },
+    {
+        "text": "Sometimes it's better to stay at home on Monday than spend the whole week debugging code written on Monday.",
+        "author": "Christopher Thompson"
+    },
+    {
+        "text": "Measuring a programmer's productivity by counting lines of code is like judging an aircraft's build by its weight.",
+        "author": "Bill Gates"
+    },
+    {
+        "text": "Debugging code is twice as hard as writing it. So if you write code as smart as you can, then by definition you're not smart enough to debug it.",
+        "author": "Brian W. Kernighan"
+    },
+    {
+        "text": "Many of you are familiar with the virtues of a programmer. There are only three of them, and of course they are: laziness, impatience and pride.",
+        "author": "Larry Wall"
+    },
+    {
+        "text": "Most software today is like Egyptian pyramids with a million bricks on top of each other and no structural integrity - they're just built by brute force and thousands of slaves.",
+        "author": "Alan Kay"
+    },
+    {
+        "text": "Most good programmers do their jobs not because they expect to be paid or recognized, but because they enjoy programming.",
+        "author": "Linus Torvalds"
+    },
+    {
+        "text": "Always code as if it's going to be accompanied by a violent psychopath who knows where you live.",
+        "author": "Martin Golding"
+    },
+    {
+        "text": "Programs should be written for the people who will read them, and the machines that will execute these programs are secondary.",
+        "author": "Harold Abelson"
+    },
+    {
+        "text": "People who think they hate computers actually hate bad programmers.",
+        "author": "Larry Niven"
+    },
+    {
+        "text": "If you give a person a program, you keep them busy for a day. If you teach a person to code, you keep them busy for a lifetime.",
+        "author": "Waseem Latif"
+    },
+    {
+        "text": "A language that doesn't change the way you think about programming is not worth learning.",
+        "author": "Alan J. Perlis"
+    },
+    {
+        "text": "We're seeing a society that is increasingly dependent on machines, but uses them more and more inefficiently.",
+        "author": "Douglas Rushkoff"
+    }
+]
